@@ -10,3 +10,16 @@ General rules:
 3xx (Redirection): The client must take extra steps at a different URL.
 4xx (Client Error): The client made a mistake (bad data, wrong URL, missing login).
 5xx (Server Error): The client did everything right, but your internal C# code crashed.
+
+Bash command:
+
+//Install EF Core library and database driver
+
+dotnet add package Microsoft.EntityFrameworkCore.InMemory //.Sqlite or .SqlServer for local computer
+
+//Example for PostgreSQL
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+
+//For connection to real database
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
